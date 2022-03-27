@@ -174,8 +174,13 @@ main {
     color: #424642;
     margin: 0 20px;
 }
+.my-info img {
+    width: 64px;
+    transition: all 1s ease;
+}
 .my-info img:hover {
     width: 85px;
+    transition: all 1s ease;
 }
 .my-info a {
     margin: 0 20px;
@@ -318,6 +323,14 @@ main {
         width: 100%;
         text-align: center;
         padding: 20px 0 0;
+    }
+    .my-info img {
+        width: 40px;
+        transition: all 1s ease;
+    }
+    .my-info img:hover {
+        width: 50px;
+        transition: all 1s ease;
     }
 }
 
