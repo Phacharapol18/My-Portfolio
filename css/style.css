@@ -285,4 +285,9 @@ main {
         left: 35px;
     }
 }
+@media (max-width:500px) {
+    .background {
+        justify-content: space-between;
+    }
+}
 
