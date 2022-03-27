@@ -292,5 +292,14 @@ main {
     .small-pic {
         height: 170px;
     }
+    .background h2 {
+        width: unset;
+        padding: 0 25px;
+    }
+    .my-info p {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0 0;
+    }
 }
 
