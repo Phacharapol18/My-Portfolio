@@ -108,8 +108,8 @@ main {
 .story p {
    color: #424642;
     font-size: 1.25rem;
-    line-height: 2;
-    margin: 35px auto;
+    line-height: 1.5;
+    margin: 5px auto;
     width: 80%;
 }
 
@@ -188,6 +188,9 @@ main {
 .my-info-head {
     padding-left: 3px;
 }
+.my-info-head span {
+    font-size: 4rem;
+}
 /*id selector*/
 
 #about-me {
@@ -209,8 +212,14 @@ main {
  }
  .content-me, .story, .work-ex {
          width: 100%;
-         border: none;
+         border-bottom: 5px solid #424642;
+         border-right: none;
+        
  }
+ .work-ex {
+     border-bottom: none;
+ }
+
  .content-me h2 {
    padding-left: 0;
    text-align: center;
@@ -252,7 +261,7 @@ main {
  }
  .my-info-head {
      width: 100%;
-     border-bottom: 5px solid #424642;
+     border-top: 5px solid #424642;
      border-right: none;
      padding: 20px 0;
  }
@@ -283,6 +292,15 @@ main {
     }
     .top-pic h3 {
         left: 35px;
+    }
+}
+@media (min-width: 1655px) and (max-width:1900px) {
+    .my-info-head {
+        width: 21.3%;
+    }
+    .my-info-head h2 {
+        padding: 33px 0;
+        margin: 0 10px 0 0;
     }
 }
 @media (max-width:501px) {
