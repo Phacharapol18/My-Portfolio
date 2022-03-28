@@ -99,10 +99,9 @@ main {
     flex-grow: 1;
     
 }
-.content-me h2, .my-info-head h2{
+.content-me h2, .my-info-head h2, .work-ex h2{
     color: #424642;
     font-size: 4rem;
-   
     text-align: right;
     padding: 35px 10px 0 150px;
 }
@@ -139,13 +138,6 @@ main {
 }
 .work-ex {
     width: 20%;
-}
-.work-ex h2 {
-    color: #424642;
-    font-size: 4rem;
-   
-    text-align: right;
-    padding: 35px 10px 0 150px;
 }
 .top-pic {
     position: relative;
