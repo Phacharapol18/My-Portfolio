@@ -178,6 +178,9 @@ main {
 .my-info a {
     margin: 0 20px;
 }
+.list-work a{
+    padding: 0;
+}
 .list-work img:hover {
     opacity: 1;
     transition: opacity 1s ease;
