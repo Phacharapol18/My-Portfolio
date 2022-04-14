@@ -1,99 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <h1>Phacharapol Phukana</h1>
-         <nav>
-             <ul>
-                 <li> 
-                     <a href="#about-me">About Me</a>  
+        <nav>
+            <ul>
+                <li>
+                    <a href="#pro">About Me</a>
                 </li>
-                 <li>
-                     <a href="#work">Work</a>
-                 </li>
-                 <li>
-                     <a href="#contact-me">Contact Me</a>
-                 </li>
-             </ul>
-         </nav>
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                <li>
+                    <a href="#contact-me">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-  <main>
-    <section class="background">
-        <h2>Portfolio</h2>
-    </section>
-    <section id= "about-me">
-        <aside class="content-me">
-            <h2>About Me</h2>
-        </aside>
-        <aside class="story">
-            <p><span>I</span> have been working as a mechanic since 2014 until present. I want to grow further 
-                and I found an opportunity to be web developer. I am a hard working person, hunger for new 
-                knowledge, and best at team player.
-                I am seeking long term employment in an organization where I can grow professionally 
-                and further enhance my skills, knowledge and experience to face and overcome the 
-                challenges of today’s changing work environment.</p>
-        </aside>
-    </section>
-    <section id= "work">
-        <aside class="work-ex">
-            <h2>work</h2>
-        </aside>
-        <figure class="list-work">
-            <article class="top-pic">
-                <a href="#" target="_blank"><img class="work-pic big-pic" src="images/html-css.jpg" alt="html background pic"></a>
-                <h3>HTML-CSS</h3>
-            </article>
-        <aside>
-            <a href="#" target="_blank"><img class="work-pic small-pic" src="images/javascript.png" alt="javascript background"></a>
-            <h3>Javascript</h3>
-         </aside>
-          <aside>
-            <a href="#" target="_blank"><img class="work-pic small-pic" src="images/node-js.png" alt="node-js background"></a>
-            <h3>Node-js</h3>
-          </aside>  
-            <aside>
-                <a href="#" target="_blank"><img class="work-pic small-pic" src="images/MS-SQL-Server-logo.png" alt="SQL background"></a>
-                <h3>SQL</h3>
-            </aside>
-            <aside>
-                <a href="#" target="_blank"><img class="work-pic small-pic" src="images/react-js.png" alt="reactjs background"></a>
-                <h3>React-js</h3>
-            </aside>
-        </figure>
-    </section>
-    
-    <footer id ="contact-me">
-        <section class="my-info-head">
-            <h2>Contact <br><span>Me</span></h2>
+    <main>
+        <section class="background">
+            <img id="pro" src="images/profile .jpg" alt="profilepic">
+            <h2>Portfolio</h2>
         </section>
-        <address class="my-info">
-            <p>Phone#: 425-418-7255</p>
-            <a href="http://github.com/Phacharapol18" target="_blank" rel="github"> 
-                <i>
-                   <img src="images/github-sign.png" alt="github icon">
-                </i>
-            </a>
-            <a href="mailto:phacharapol18@gmail.com" target="_blank">
-                <i>
-                    <img src="images/gmail.png" alt="gmail icon">
-                </i>
-            </a>
-            <a href="http://www.linkedin.com/in/phacharapol-phukana-223457232/" target="_blank">
-                <i>
-                    <img src="images/linkedin.png" alt="linkedin icon">
-                </i>
-            </a>
-        </address>
-    </footer>
- </main> 
+        <div class="container">
+            <section id="about-me" class="row">
+                <aside class="content-me col-lg-2">
+                    <h2>About Me</h2>
+                </aside>
+                <aside class="story col-lg-10">
+                    <p><span>I</span> have been working as a mechanic since 2014 until present. I want to grow further
+                        and I found an opportunity to be web developer. I am a hard working person, hunger for new
+                        knowledge, and best at team player.
+                        I am seeking long term employment in an organization where I can grow professionally
+                        and further enhance my skills, knowledge and experience to face and overcome the
+                        challenges of today’s changing work environment.</p>
+                </aside>
+            </section>
+            <section id="work" class="row">
+                <aside class="work-ex col-lg-2">
+                    <h2>work</h2>
+                </aside>
+                <figure class="list-work col-lg-10">
+                    <article class="top-pic">
+                        <a href="#" target="_blank"><img class="work-pic big-pic" src="images/html-css.jpg"
+                                alt="html background pic"></a>
+                        <h3>HTML-CSS</h3>
+                    </article>
+                    <aside>
+                        <a href="#" target="_blank"><img class="work-pic small-pic" src="images/javascript.png"
+                                alt="javascript background"></a>
+                        <h3>Javascript</h3>
+                    </aside>
+                    <aside>
+                        <a href="#" target="_blank"><img class="work-pic small-pic" src="images/node-js.png"
+                                alt="node-js background"></a>
+                        <h3>Node-js</h3>
+                    </aside>
+                    <aside>
+                        <a href="#" target="_blank"><img class="work-pic small-pic" src="images/MS-SQL-Server-logo.png"
+                                alt="SQL background"></a>
+                        <h3>SQL</h3>
+                    </aside>
+                    <aside>
+                        <a href="#" target="_blank"><img class="work-pic small-pic" src="images/react-js.png"
+                                alt="reactjs background"></a>
+                        <h3>React-js</h3>
+                    </aside>
+                </figure>
+            </section>
+
+            <footer id="contact-me" class="row row1">
+                <section class="my-info-head col-lg-2">
+                    <h2>Contact <br><span>Me</span></h2>
+                </section>
+                <address class="my-info col-lg-10">
+                    <p>Phone#: 425-418-7255</p>
+                    <a href="http://github.com/Phacharapol18" target="_blank" rel="github">
+                        <i>
+                            <img src="images/github-sign.png" alt="github icon">
+                        </i>
+                    </a>
+                    <a href="mailto:phacharapol18@gmail.com" target="_blank">
+                        <i>
+                            <img src="images/gmail.png" alt="gmail icon">
+                        </i>
+                    </a>
+                    <a href="http://www.linkedin.com/in/phacharapol-phukana-223457232/" target="_blank">
+                        <i>
+                            <img src="images/linkedin.png" alt="linkedin icon">
+                        </i>
+                    </a>
+                </address>
+            </footer>
+        </div>
+    </main>
 </body>
+
 </html>
