@@ -311,7 +311,7 @@ h5{
     }
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
 
 .modal-dialog {
     max-width: 765px;
@@ -338,7 +338,7 @@ h5{
         width: 95%;
     }
     .dropdown-item{
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     #about-me,
