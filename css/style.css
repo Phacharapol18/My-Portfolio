@@ -55,7 +55,6 @@ aside {
     width: 49%;
     margin-left: -14px;
     position: relative;
-    text-align: center;
     color: #fff;
     font-size: 1.5rem;
 }
@@ -63,7 +62,7 @@ aside {
 aside h3 {
     position: absolute;
     bottom: 57px;
-    left: 27px;
+    left: 28px;
     padding: 25px;
     background: linear-gradient(50deg, rgba(60, 56, 56, 1) 14%, rgba(5, 11, 59, 1) 100%);
     border-radius: 0 25px 25px 0;
@@ -73,10 +72,27 @@ main {
     background: linear-gradient(162deg, rgba(227, 227, 227, 1) 0%, rgba(236, 236, 236, 1) 17%);
     padding-bottom: 10px;
 }
+h5{
+    color: #000;
+}
 
 
 /*class selector*/
-
+.dropdown-menu{
+    padding: 20px;
+    border-radius: 25px;
+    transform: translate(48px, 202px);
+    background: #FAEEE0;
+}
+.modal-body ul a {
+    color: #000;
+    transition: font-size 1s ease;
+}
+.modal-body ul a:hover{
+    font-size: 1.75rem;
+    color: #126E82;
+    transition: font-size 1s ease;
+}
 .background {
     background-image: url("../images/hero-img_copy.jpg");
     background-size: cover;
@@ -157,14 +173,14 @@ main {
 }
 
 .big-pic {
-    width: 95%;
+    width: 100%;
     margin-left: 0;
     margin-right: 0;
 }
 
 .small-pic {
     height: 200px;
-    width: 95%;
+    width: 100%;
 }
 
 .work-ex {
@@ -178,11 +194,28 @@ main {
     font-size: 1.5rem;
     width: 100%;
 }
+.btn {
+    width: 95%;
+}
+.btn:focus{
+    box-shadow: none;
+}
+.modal-header{
+    background: #424642;
+    border-radius: 20px 20px 0 0;
+}
+.modal-content{
+    border-radius: 20px 20px 0 0;
+}
+.modal-title{
+    color: #fff;
+   
+}
 
 .top-pic h3 {
     position: absolute;
     bottom: 70px;
-    left: 36px;
+    left: 39px;
     padding: 25px;
     background: linear-gradient(50deg, rgba(60, 56, 56, 1) 14%, rgba(5, 11, 59, 1) 100%);
     border-radius: 0 25px 25px 0;
@@ -257,8 +290,24 @@ main {
 }
 
 /*media query*/
+@media (min-width: 576px) {
+
+.modal-dialog {
+    max-width: 765px;
+}
+}
+
 
 @media (max-width: 1340px) {
+    *{
+        text-align: center;
+    }
+    .dropdown-menu{
+        width: 95%;
+    }
+    .dropdown-item{
+        font-size: 1.1rem;
+    }
 
     #about-me,
     #work,
@@ -412,4 +461,53 @@ main {
         height: unset;
         border-radius: 10px 10px 0 0;
     }
+}
+/*animation background*/
+
+
+
+
+@keyframes bg-animation
+{
+0%   {
+           background-position: 
+               -100% -100%,
+               200% 200%,
+               -100% 200%,
+               200% -100%;
+      }
+      50% {
+           background-position: 
+               150% 100%,
+               -200% 100%,
+               100% 0%,
+               0% 100%;
+      }
+      100% {
+           background-position: 
+               -100% -100%,
+               200% 200%,
+               -100% 200%,
+               200% -100%;
+      }
+}
+
+
+main {
+    background: 
+        radial-gradient(ellipse at center, rgba(0,0,255,0.3) 0%, rgba(0,0,0,0) 70%), /* niebieski */
+        radial-gradient(ellipse at center, rgba(255,0,0,0.3) 0%, rgba(0,0,0,0) 70%), /*czerwony */
+        radial-gradient(ellipse at center, rgba(0,255,0,0.3) 0%, rgba(0,0,0,0) 70%) /*zielony */
+        #c3d7db;
+    background-repeat: 
+        no-repeat, 
+        no-repeat, 
+        no-repeat;
+    background-size: 
+        900px 900px,
+        900px 900px,
+        900px 900px;
+    background-attachment: fixed;
+    
+    animation:bg-animation 30s infinite;
 }
