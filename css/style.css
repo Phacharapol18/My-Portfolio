@@ -71,6 +71,7 @@ aside h3 {
 main {
     background: linear-gradient(162deg, rgba(227, 227, 227, 1) 0%, rgba(236, 236, 236, 1) 17%);
     padding-bottom: 10px;
+    width: 100%;
 }
 h5{
     color: #000;
@@ -78,6 +79,9 @@ h5{
 
 
 /*class selector*/
+.col-lg-2{
+    width: 11%;
+}
 .dropdown-menu{
     padding: 20px;
     border-radius: 25px;
@@ -107,7 +111,7 @@ h5{
 }
 
 .container {
-    max-width: 1800px;
+    max-width:85% ;
 }
 
 .background h2 {
@@ -143,7 +147,7 @@ h5{
 .my-info-head h2,
 .work-ex h2 {
     color: #424642;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: right;
     /*padding: 35px 10px 0 150px;*/
 }
@@ -160,7 +164,7 @@ h5{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 80%;
+    width: 89%;
 }
 
 .work-pic {
@@ -262,7 +266,7 @@ h5{
 
 .my-info-head {
     padding-left: 3px;
-    width: 15.8%;
+    /*width: 15.8%;*/
 }
 
 .my-info-head span {
@@ -283,6 +287,9 @@ h5{
     margin-top: 2%;
     display: flex;
 }
+#contact-me{
+    width: 94.1%
+}
 
 #pro {
     width: 13.5%;
@@ -290,10 +297,35 @@ h5{
 }
 
 /*media query*/
+@media (max-width:502px){
+    .modal-body ul a {
+        font-size: 1rem;
+        transition: font-size 1s ease;
+    }
+    .modal-body ul a:hover {
+        font-size: 1.1rem;
+        transition: font-size 1s ease;
+    }
+    .dropdown-item{
+        font-size: 0.8rem;
+    }
+}
+
 @media (min-width: 576px) {
 
 .modal-dialog {
     max-width: 765px;
+}
+.dropdown-item{
+    font-size: 0.6rem;
+}
+.modal-body ul a {
+    font-size: 1rem;
+    transition: font-size 1s ease;
+}
+.modal-body ul a:hover {
+    font-size: 1.1rem;
+    transition: font-size 1s ease;
 }
 }
 
@@ -462,12 +494,8 @@ h5{
         border-radius: 10px 10px 0 0;
     }
 }
-/*animation background*/
 
-
-
-
-@keyframes bg-animation
+@keyframes bganimation
 {
 0%   {
            background-position: 
@@ -509,5 +537,11 @@ main {
         900px 900px;
     background-attachment: fixed;
     
-    animation:bg-animation 30s infinite;
+    animation:bganimation 30s infinite;
 }
+
+
+
+
+
+
