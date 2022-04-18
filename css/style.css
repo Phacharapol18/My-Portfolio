@@ -5,7 +5,7 @@
 
 header {
     background: linear-gradient(50deg, rgba(60, 56, 56, 1) 14%, rgba(5, 11, 59, 1) 100%);
-    padding: 30px;
+    padding: 15px;
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -27,23 +27,20 @@ header li {
     margin: 5px;
 }
 
-a {
+a,
+.nav-link {
     color: #fff;
     text-decoration: none;
     font-size: 1.5rem;
-    padding: 20px;
+    padding: 0 20px;
     transition: font-size 1s ease;
 }
 
 nav {
-    float: right;
+    width: 100%;
 }
 
-nav a:hover {
-    font-size: 1.75rem;
-    color: #126E82;
-    transition: font-size 1s ease;
-}
+
 
 span {
     font-size: 2rem;
@@ -62,7 +59,7 @@ aside {
 aside h3 {
     position: absolute;
     bottom: 57px;
-    left: 28px;
+    left: 40px;
     padding: 25px;
     background: linear-gradient(50deg, rgba(60, 56, 56, 1) 14%, rgba(5, 11, 59, 1) 100%);
     border-radius: 0 25px 25px 0;
@@ -73,30 +70,95 @@ main {
     padding-bottom: 10px;
     width: 100%;
 }
-h5{
+
+h5 {
     color: #000;
 }
 
 
 /*class selector*/
-.col-lg-2{
-    width: 11%;
+.back {
+    padding: 10px 5%;
+    border-radius: 50%;
+    background: linear-gradient(168deg, rgba(137, 176, 171, 1) 29%, rgba(0, 212, 255, 1) 46%, rgba(34, 34, 186, 1) 100%);
+    transition: all 1s ease;
 }
-.dropdown-menu{
-    padding: 20px;
-    border-radius: 25px;
-    transform: translate(48px, 202px);
-    background: #FAEEE0;
+
+.back:hover {
+    color: #fff;
+    background: linear-gradient(168deg, rgba(22, 112, 101, 1) 23%, rgba(255, 0, 39, 1) 51%, rgba(34, 34, 186, 1) 87%);
+    transition: all 1s ease;
 }
-.modal-body ul a {
-    color: #000;
-    transition: font-size 1s ease;
+
+.listHTML,
+.listJA,
+.listNJ,
+.listSQ,
+.listRJ {
+    display: none;
+    text-align: center;
 }
-.modal-body ul a:hover{
+
+.listHTML li,
+.listJA li {
+    font-size: 1.5rem;
+}
+
+.rowbig,
+.rowsmall {
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-link:hover {
     font-size: 1.75rem;
     color: #126E82;
     transition: font-size 1s ease;
 }
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.navbar-collapse {
+    flex-grow: unset;
+}
+
+.col-lg-2 {
+    width: 11%;
+}
+
+
+
+.listHTML ul a,
+.listHTML a,
+.listJA ul a,
+.listJA a,
+.listNJ ul a,
+.listNJ a,
+.listSQ ul a,
+.listSQ a,
+.listRJ ul a,
+.listRJ a {
+    color: #D77FA1;
+    transition: font-size 1s ease;
+}
+
+.listHTML ul a:hover,
+.listHTML a:hover,
+.listJA ul a:hover,
+.listJA a:hover,
+.listNJ ul a:hover,
+.listNJ a:hover,
+.listSQ ul a:hover,
+.listSQ a:hover,
+.listRJ ul a:hover,
+.listRJ a:hover {
+    font-size: 1.75rem;
+    color: #126E82;
+    transition: font-size 1s ease;
+}
+
 .background {
     background-image: url("../images/hero-img_copy.jpg");
     background-size: cover;
@@ -111,7 +173,7 @@ h5{
 }
 
 .container {
-    max-width:85% ;
+    max-width: 90%;
 }
 
 .background h2 {
@@ -131,6 +193,10 @@ h5{
 .work-ex {
     /*width: 20%;*/
     border-right: 5px solid #424642;
+}
+
+.my-info-head {
+    width: 10.4%;
 }
 
 .row1 {
@@ -168,7 +234,7 @@ h5{
 }
 
 .work-pic {
-    width: 43.5%;
+    width: 45%;
     margin: 25px;
     opacity: 0.4;
     border: 2px double #424642;
@@ -187,9 +253,6 @@ h5{
     width: 100%;
 }
 
-.work-ex {
-    /*width: 20%;*/
-}
 
 .top-pic {
     position: relative;
@@ -198,28 +261,20 @@ h5{
     font-size: 1.5rem;
     width: 100%;
 }
+
 .btn {
     width: 95%;
 }
-.btn:focus{
+
+.btn:focus {
     box-shadow: none;
 }
-.modal-header{
-    background: #424642;
-    border-radius: 20px 20px 0 0;
-}
-.modal-content{
-    border-radius: 20px 20px 0 0;
-}
-.modal-title{
-    color: #fff;
-   
-}
+
 
 .top-pic h3 {
     position: absolute;
     bottom: 70px;
-    left: 39px;
+    left: 49px;
     padding: 25px;
     background: linear-gradient(50deg, rgba(60, 56, 56, 1) 14%, rgba(5, 11, 59, 1) 100%);
     border-radius: 0 25px 25px 0;
@@ -287,8 +342,9 @@ h5{
     margin-top: 2%;
     display: flex;
 }
-#contact-me{
-    width: 94.1%
+
+#contact-me {
+    width: 100%
 }
 
 #pro {
@@ -297,49 +353,64 @@ h5{
 }
 
 /*media query*/
-@media (max-width:502px){
-    .modal-body ul a {
+@media (max-width:502px) {
+    .navbar>.container-fluid {
+        flex-direction: column;
+    }
+
+    .listHTML ul a {
         font-size: 1rem;
         transition: font-size 1s ease;
     }
-    .modal-body ul a:hover {
+
+    .listHTML ul a:hover {
         font-size: 1.1rem;
         transition: font-size 1s ease;
     }
-    .dropdown-item{
-        font-size: 0.8rem;
+
+
+    #contact-me {
+        margin-left: 0px;
+        margin-right: 0px;
     }
+
+    .my-info {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 576px) {
+    #contact-me {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 
-.modal-dialog {
-    max-width: 765px;
-}
-.dropdown-item{
-    font-size: 0.6rem;
-}
-.modal-body ul a {
-    font-size: 1rem;
-    transition: font-size 1s ease;
-}
-.modal-body ul a:hover {
-    font-size: 1.1rem;
-    transition: font-size 1s ease;
-}
+    .listHTML ul a {
+        font-size: 1rem;
+        transition: font-size 1s ease;
+    }
+
+    .listHTML ul a:hover {
+        font-size: 1.1rem;
+        transition: font-size 1s ease;
+    }
+
+    .navbar>.container-fluid {
+        flex-direction: column;
+    }
+
+    .my-info {
+        width: 100%;
+    }
 }
 
 
 @media (max-width: 1340px) {
-    *{
+    * {
         text-align: center;
     }
-    .dropdown-menu{
-        width: 95%;
-    }
-    .dropdown-item{
-        font-size: 0.9rem;
-    }
+
 
     #about-me,
     #work,
@@ -426,6 +497,16 @@ h5{
     .small-pic {
         height: 320px;
     }
+
+    #contact-me {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .my-info {
+        width: 100%;
+    }
+
 }
 
 @media (min-width: 1341px) and (max-width:1632px) {
@@ -435,24 +516,6 @@ h5{
     }
 }
 
-/*@media (min-width:1632px) and (max-width:1654px) {
-  
-    .content-me h2, .my-info-head h2, .work-ex h2 {
-        padding: 33px 10px 0 93px;
-    }
-    .top-pic h3 {
-        left: 35px;
-    }
-}*/
-/*@media (min-width: 1655px) and (max-width:1900px) {
-    .my-info-head {
-        width: 21.3%;
-    }
-    .my-info-head h2 {
-        padding: 33px 0;
-        margin: 0 10px 0 0;
-    }
-}*/
 @media (max-width:640px) {
     .background {
         justify-content: space-between;
@@ -482,12 +545,15 @@ h5{
         width: 50px;
         transition: all 1s ease;
     }
+
     header {
         padding: 9px 0;
     }
-    nav{
-        padding: 0 112px 0 76px;
+
+    .nav-link {
+        padding-top: 15px;
     }
+
     #pro {
         width: 25%;
         height: unset;
@@ -495,53 +561,51 @@ h5{
     }
 }
 
-@keyframes bganimation
-{
-0%   {
-           background-position: 
-               -100% -100%,
-               200% 200%,
-               -100% 200%,
-               200% -100%;
-      }
-      50% {
-           background-position: 
-               150% 100%,
-               -200% 100%,
-               100% 0%,
-               0% 100%;
-      }
-      100% {
-           background-position: 
-               -100% -100%,
-               200% 200%,
-               -100% 200%,
-               200% -100%;
-      }
+@keyframes bganimation {
+    0% {
+        background-position:
+            -100% -100%,
+            200% 200%,
+            -100% 200%,
+            200% -100%;
+    }
+
+    50% {
+        background-position:
+            150% 100%,
+            -200% 100%,
+            100% 0%,
+            0% 100%;
+    }
+
+    100% {
+        background-position:
+            -100% -100%,
+            200% 200%,
+            -100% 200%,
+            200% -100%;
+    }
 }
 
 
 main {
-    background: 
-        radial-gradient(ellipse at center, rgba(0,0,255,0.3) 0%, rgba(0,0,0,0) 70%), /* niebieski */
-        radial-gradient(ellipse at center, rgba(255,0,0,0.3) 0%, rgba(0,0,0,0) 70%), /*czerwony */
-        radial-gradient(ellipse at center, rgba(0,255,0,0.3) 0%, rgba(0,0,0,0) 70%) /*zielony */
+    background:
+        radial-gradient(ellipse at center, rgba(0, 0, 255, 0.3) 0%, rgba(0, 0, 0, 0) 70%),
+        /* niebieski */
+        radial-gradient(ellipse at center, rgba(255, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 70%),
+        /*czerwony */
+        radial-gradient(ellipse at center, rgba(0, 255, 0, 0.3) 0%, rgba(0, 0, 0, 0) 70%)
+        /*zielony */
         #c3d7db;
-    background-repeat: 
-        no-repeat, 
-        no-repeat, 
+    background-repeat:
+        no-repeat,
+        no-repeat,
         no-repeat;
-    background-size: 
+    background-size:
         900px 900px,
         900px 900px,
         900px 900px;
     background-attachment: fixed;
-    
-    animation:bganimation 30s infinite;
+
+    animation: bganimation 30s infinite;
 }
-
-
-
-
-
-

@@ -12,25 +12,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body  class="animate__animated animate__zoomIn ">
     <header>
-        <h1>Phacharapol Phukana</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#pro">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <h1 class="navbar-brand">Phacharapol Phukana</h1>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#pro">About Me</a>
+                        <a class="nav-link" href="#work">Work</a>
+                        <a class="nav-link" href="#contact-me">Contact Me</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -40,128 +47,170 @@
         </section>
         <div class="container">
             <section id="about-me" class="row">
-                <aside class="content-me col-lg-2">
+                <aside class="content-me col-lg-2 col-sm-12">
                     <h2>About Me</h2>
                 </aside>
-                <aside class="story col-lg-10">
-                    <p><span>I</span> have been working as a mechanic since 2014 until present. I want to grow further
-                        and I found an opportunity to be web developer. I am a hard working person, hunger for new
-                        knowledge, and best at team player.
-                        I am seeking long term employment in an organization where I can grow professionally
-                        and further enhance my skills, knowledge and experience to face and overcome the
-                        challenges of today’s changing work environment.</p>
+                <aside class="story col-lg-10 col-sm-12">
+                    <div class="row">
+                        <p class="col-lg-12"><span>I</span> have been working as a mechanic since 2014 until present. I
+                            want to grow further
+                            and I found an opportunity to be web developer. I am a hard working person, hunger for new
+                            knowledge, and best at team player.
+                            I am seeking long term employment in an organization where I can grow professionally
+                            and further enhance my skills, knowledge and experience to face and overcome the
+                            challenges of today’s changing work environment.</p>
+                    </div>
                 </aside>
             </section>
             <section id="work" class="row">
-                <aside class="work-ex col-lg-2">
+                <aside class="work-ex col-lg-2 col-sm-12">
                     <h2>work</h2>
                 </aside>
-                <figure class="list-work col-lg-10">
-                    <article class="top-pic">
-                        <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"
-                            target="_blank"><img class="work-pic big-pic" src="images/html-css.jpg"
-                                alt="html background pic"></a>
-                        <h3>HTML-CSS</h3>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">HTML and CSS</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <ul>
-                                            <li><a href="http://phacharapol18.github.io/mini-personal-repo/"
-                                                    target="_blank">http://phacharapol18.github.io/mini-personal-repo/</a>
-                                            </li>
-                                            <li><a href="https://phacharapol18.github.io/Refactor-code-homework/"
-                                                    target="_blank">https://phacharapol18.github.io/Refactor-code-homework/</a>
-                                            </li>
-                                            <li><a href="https://phacharapol18.github.io/cv/"
-                                                    target="_blank">https://phacharapol18.github.io/cv/resume</a>
-                                            </li>
+                <figure class="list-work col-lg-10 col-sm-12">
+                    <div class="row rowbig">
+                        <article class="top-pic gone col-lg-12">
+                            <a class="btn html" href="#"><img class="work-pic big-pic" src="images/html-css.jpg"
+                                    alt="html background pic"></a>
+                            <h3>HTML-CSS</h3>
+                        </article>
+                        <ul class="listHTML">
+                            <li class="animate__animated animate__backInLeft"> Web:<a href="http://phacharapol18.github.io/mini-personal-repo/"
+                                    target="_blank">http://phacharapol18.github.io/mini-personal-repo/</a>
+                                <ul class="animate__animated animate__backInRight">
+                                    <li>github:<a href="https://github.com/Phacharapol18/mini-personal-repo"
+                                            target="_blank">https://github.com/Phacharapol18/mini-personal-repo</a>
+                                    </li>
+                                </ul>
 
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <aside class="dropdown">
-                        <a class="btn" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" href="#"
-                            target="_blank"><img class="work-pic small-pic" src="images/javascript.png"
-                                alt="javascript background"></a>
-                        <h3>Javascript and project 1</h3>
+                            </li>
+                            <li class="animate__animated animate__backInLeft">Web:<a href="https://phacharapol18.github.io/Refactor-code-homework/"
+                                    target="_blank">https://phacharapol18.github.io/Refactor-code-homework/</a>
+                                <ul class="animate__animated animate__backInRight">
+                                    <li>github:<a href="https://github.com/Phacharapol18/Refactor-code-homework"
+                                            target="_blank">https://github.com/Phacharapol18/Refactor-code-homework</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="animate__animated animate__backInLeft">Web:<a href="https://phacharapol18.github.io/cv/"
+                                    target="_blank">https://phacharapol18.github.io/cv/resume</a>
+                                <ul class="animate__animated animate__backInRight">
+                                    <li>github:<a href="https://github.com/Phacharapol18/cv"
+                                            target="_blank">https://github.com/Phacharapol18/cv</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <button class="back"> Go Back</button>
+                        </ul>
+                    </div>
+                    <div class="row rowsmall">
+                        <aside class="gone col-lg-6 col-sm-12">
+                            <a class="btn ja" href="#"><img class="work-pic small-pic" src="images/javascript.png"
+                                    alt="javascript background"></a>
+                            <h3>Javascript and project 1</h3>
 
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="https://phacharapol18.github.io/r-p-s-min-pro/"
-                                    target="_blank"> https://phacharapol18.github.io/r-p-s-<br>min-pro/</a>
+                        </aside>
+                        <ul class="listJA">
+                            <li class="animate__animated animate__backInLeft"> Web:<a href="https://phacharapol18.github.io/r-p-s-min-pro/"
+                                    target="_blank">"https://phacharapol18.github.io/r-p-s-min-pro/</a>
+                                <ul class="animate__animated animate__backInRight">
+                                    <li class="animate__animated ">github:<a href="https://github.com/Phacharapol18/r-p-s-min-pro"
+                                            target="_blank">https://github.com/Phacharapol18/r-p-s-min-pro</a>
+                                    </li>
+                                </ul>
+
                             </li>
-                            <li><a class="dropdown-item"
-                                    href="https://phacharapol18.github.io/password-with-javaScript/"
-                                    target="_blank">https://phacharapol18.github.io/password<br>-with-javaScript/</a>
+                            <li class="animate__animated animate__backInLeft">Web:<a href="https://phacharapol18.github.io/password-with-javaScript/"
+                                    target="_blank">https://phacharapol18.github.io/password-with-javaScript/</a>
+                                <ul class="animate__animated animate__backInRight">
+                                    <li>github:<a href="https://github.com/Phacharapol18/password-with-javaScript"
+                                            target="_blank">https://github.com/Phacharapol18/password-with-javaScript</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li><a class="dropdown-item" href="https://phacharapol18.github.io/quiz-game-with-car/"
-                                    target="_blank">https://phacharapol18.github.io/quiz<br>-game-with-car/</a>
+                            <li class="animate__animated animate__backInLeft">Web:<a href="https://phacharapol18.github.io/quiz-game-with-car/"
+                                    target="_blank">https://phacharapol18.github.io/quiz-game-with-car/</a>
+                                <ul class="animate__animated animate__backInRight">
+                                    <li>github:<a href="https://github.com/Phacharapol18/quiz-game-with-car"
+                                            target="_blank">https://github.com/Phacharapol18/quiz-game-with-car</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li><a class="dropdown-item" href="https://phacharapol18.github.io/Day-planer/"
+                            <li class="animate__animated animate__backInLeft">Web:<a href="https://phacharapol18.github.io/Day-planer/"
                                     target="_blank">https://phacharapol18.github.io/Day-planer/</a>
+                                <ul class="animate__animated animate__backInRight">
+                                    <li>github:<a href="https://github.com/Phacharapol18/Day-planer"
+                                            target="_blank">https://github.com/Phacharapol18/Day-planer</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li><a class="dropdown-item" href=" https://phacharapol18.github.io/Weather-forcast/"
-                                    target="_blank">
-                                    https://phacharapol18.github.io/<br>Weather-forcast/</a>
+                            <li class="animate__animated animate__backInLeft">Web:<a href="https://phacharapol18.github.io/Weather-forcast/"
+                                    target="_blank">https://phacharapol18.github.io/Weather-forcast/</a>
+                                <ul class="animate__animated animate__backInRight">
+                                    <li>github:<a href="https://github.com/Phacharapol18/Weather-forcast"
+                                            target="_blank">https://github.com/Phacharapol18/Weather-forcast</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li><a class="dropdown-item" href="https://phacharapol18.github.io/car-brand-word-games/"
-                                    target="_blank">
-                                    https://phacharapol18.github.io/car-<br>brand-word-games/</a>
+                            <li class="animate__animated animate__backInLeft">Web:<a href="https://phacharapol18.github.io/car-brand-word-games/"
+                                    target="_blank">https://phacharapol18.github.io/car-brand-word-games/</a>
+                                <ul class="animate__animated animate__backInRight">
+                                    <li>github:<a href="https://github.com/Phacharapol18/car-brand-word-games"
+                                            target="_blank">https://github.com/Phacharapol18/car-brand-word-games</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li><a class="dropdown-item" href="https://jnbanks.github.io/Project1-Movie-Beverage/"
-                                    target="_blank">
-                                    https://jnbanks.github.io/Project1<br>-Movie-Beverage/</a>
+                            <li class="animate__animated animate__backInLeft">Web: Group Project<a href="https://phacharapol18.github.io/Project1-Movie-Beverage/"
+                                    target="_blank">https://phacharapol18.github.io/Project1-Movie-Beverage/</a>
+                                <ul class="animate__animated animate__backInRight">
+                                    <li>github:<a href="https://github.com/Phacharapol18/Project1-Movie-Beverage"
+                                            target="_blank">https://github.com/Phacharapol18/Project1-Movie-Beverage</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li><a class="dropdown-item" href="https://phacharapol18.github.io/drumgame/"
-                                    target="_blank">
-                                    https://phacharapol18.github.io/drumgame/</a>
+                            <li class="animate__animated animate__backInLeft">Web:<a href="https://phacharapol18.github.io/drumgame/"
+                                    target="_blank">https://phacharapol18.github.io/drumgame/</a>
+                                <ul class="animate__animated animate__backInRight">
+                                    <li>github:<a href="https://github.com/Phacharapol18/drumgame"
+                                            target="_blank">https://github.com/Phacharapol18/drumgame</a>
+                                    </li>
+                                </ul>
                             </li>
-
+                            <button class="back"> Go Back</button>
                         </ul>
-
-
-                    </aside>
-                    <aside class="dropdown">
-                        <a class="btn" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" href="#"
-                            target="_blank"><img class="work-pic small-pic" src="images/node-js.png"
-                                alt="node-js background"></a>
-                        <h3>Node-js</h3>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li class="dropdown-item">coming soon</li>
+                        <aside class="gone col-lg-6 col-sm-12">
+                            <a class="btn nj" href="#"><img class="work-pic small-pic" src="images/node-js.png"
+                                    alt="node-js background"></a>
+                            <h3>Node-js</h3>
+                        </aside>
+                        <ul class="listNJ">
+                             <h1>Coming Soon</h1>
+                             <button class="back"> Go Back</button>
                         </ul>
+                    </div>
+                    <div class="row rowsmall">
+                        <aside class="gone col-lg-6 col-sm-12">
+                            <a class="btn sq" href="#"><img class="work-pic small-pic"
+                                    src="images/MS-SQL-Server-logo.png" alt="SQL background"></a>
+                            <h3>SQL</h3>
+                        </aside>
+                        <ul class="listSQ">
+                            <h1>Coming Soon</h1>
+                            <button class="back"> Go Back</button>
+                       </ul>
+                        <aside class="gone col-lg-6 col-sm-12">
+                            <a class="btn rj" href="#"><img class="work-pic small-pic" src="images/react-js.png"
+                                    alt="reactjs background"></a>
+                            <h3>React-js</h3>
+                        </aside>
+                        <ul class="listRJ">
+                            <h1>Coming Soon</h1>
+                            <button class="back"> Go Back</button>
+                       </ul>
+                    </div>
 
-                    </aside>
-                    <aside class="dropdown">
-                        <a class="btn" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" href="#"
-                            target="_blank"><img class="work-pic small-pic" src="images/MS-SQL-Server-logo.png"
-                                alt="SQL background"></a>
-                        <h3>SQL</h3>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li class="dropdown-item">coming soon</li>
-                        </ul>
-                    </aside>
-                    <aside class="dropdown">
-                        <a class="btn" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" href="#"
-                            target="_blank"><img class="work-pic small-pic" src="images/react-js.png"
-                                alt="reactjs background"></a>
-                        <h3>React-js</h3>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li class="dropdown-item">coming soon</li>
-                        </ul>
-                    </aside>
                 </figure>
-            </section>
 
+            </section>
             <footer id="contact-me" class="row row1">
                 <section class="my-info-head col-lg-2">
                     <h2>Contact <br><span>Me</span></h2>
@@ -187,6 +236,21 @@
             </footer>
         </div>
     </main>
+    <script src="index.js"></script>
 </body>
 
 </html>
+
+<!--
+    
+  
+ 
+
+
+    <li><a class="dropdown-item" href="https://phacharapol18.github.io/drumgame/"
+            target="_blank">
+            https://phacharapol18.github.io/drumgame/</a>
+    </li>
+
+</ul>
+   
