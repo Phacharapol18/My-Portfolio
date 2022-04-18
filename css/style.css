@@ -357,16 +357,9 @@ h5 {
     .navbar>.container-fluid {
         flex-direction: column;
     }
-
-    .listHTML ul a {
-        font-size: 1rem;
-        transition: font-size 1s ease;
-    }
-
-    .listHTML ul a:hover {
-        font-size: 1.1rem;
-        transition: font-size 1s ease;
-    }
+.big-pic{
+    height: 170px;
+}
 
 
     #contact-me {
@@ -377,6 +370,33 @@ h5 {
     .my-info {
         width: 100%;
     }
+    .listHTML ul a,
+.listHTML a,
+.listJA ul a,
+.listJA a,
+.listNJ ul a,
+.listNJ a,
+.listSQ ul a,
+.listSQ a,
+.listRJ ul a,
+.listRJ a {
+    font-size: 0.8rem;
+    transition: font-size 1s ease;
+}
+.listHTML ul a:hover,
+.listHTML a:hover,
+.listJA ul a:hover,
+.listJA a:hover,
+.listNJ ul a:hover,
+.listNJ a:hover,
+.listSQ ul a:hover,
+.listSQ a:hover,
+.listRJ ul a:hover,
+.listRJ a:hover {
+    font-size: 1rem;
+    color: #126E82;
+    transition: font-size 1s ease;
+}
 
 }
 
@@ -385,15 +405,8 @@ h5 {
         margin-left: 0px;
         margin-right: 0px;
     }
-
-    .listHTML ul a {
-        font-size: 1rem;
-        transition: font-size 1s ease;
-    }
-
-    .listHTML ul a:hover {
-        font-size: 1.1rem;
-        transition: font-size 1s ease;
+    .big-pic{
+        height: 170px;
     }
 
     .navbar>.container-fluid {
@@ -403,6 +416,33 @@ h5 {
     .my-info {
         width: 100%;
     }
+    .listHTML ul a,
+    .listHTML a,
+    .listJA ul a,
+    .listJA a,
+    .listNJ ul a,
+    .listNJ a,
+    .listSQ ul a,
+    .listSQ a,
+    .listRJ ul a,
+    .listRJ a {
+        font-size: 0.8rem;
+        transition: font-size 1s ease;
+    }
+    .listHTML ul a:hover,
+.listHTML a:hover,
+.listJA ul a:hover,
+.listJA a:hover,
+.listNJ ul a:hover,
+.listNJ a:hover,
+.listSQ ul a:hover,
+.listSQ a:hover,
+.listRJ ul a:hover,
+.listRJ a:hover {
+    font-size: 1rem;
+    color: #126E82;
+    transition: font-size 1s ease;
+}
 }
 
 
