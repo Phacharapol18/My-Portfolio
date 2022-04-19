@@ -6,8 +6,6 @@
 header {
     background: linear-gradient(50deg, rgba(60, 56, 56, 1) 14%, rgba(5, 11, 59, 1) 100%);
     padding: 15px;
-    position: fixed;
-    z-index: 1;
     width: 100%;
 }
 
