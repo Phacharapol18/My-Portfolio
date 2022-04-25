@@ -98,7 +98,8 @@ h5 {
 }
 
 .listHTML li,
-.listJA li {
+.listJA li,
+.listNJ li {
     font-size: 1.5rem;
 }
 
